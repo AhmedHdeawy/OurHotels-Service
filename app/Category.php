@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
 {
+    // Define Modal table
 	protected $table = 'categories';
 
      /**
@@ -15,7 +16,9 @@ class Category extends Model
      */
     public $timestamps = false;
 
-
+    /**
+     * Get the childs for the category.
+     */
     public function childs()
     {
     	return $this->hasMany('App\Category', 'parent_id', 'id');
