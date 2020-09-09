@@ -1,23 +1,11 @@
-# Categories Tree
+# OurHotels
 
-### Output all Categories with childs in atree
+### Implement OurHotels service
 
-I used recusrion for fetch category and it's child
+ is a hotel search solution that looks into many providers and displays results from all the available hotels
 
-### Installation
-
-Run the project by following these steps
-
-
-```sh
-$ php artisan migrate
-$ php artisan db:seed
-$ php artisan serve
-```
 ## Author
-
 Eng: Ahmed Hdeawy
-
 
 ## License
 
