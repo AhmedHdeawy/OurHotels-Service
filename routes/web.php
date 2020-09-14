@@ -13,6 +13,3 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/CarzyHotels', 'OurHotelsServiceController@search');
-
-Route::post('hotels/create', 'OurHotelsServiceController@store');

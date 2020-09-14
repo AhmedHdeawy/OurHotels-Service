@@ -37,7 +37,23 @@ class TopHotelFactory implements AbstractProviderFactory
         $url = "http://www.topHotel.com?from={$this->data['from_date']}&to={$this->data['to_date']}&city={$this->data['city']}&adultsCount={$this->data['adults_number']}";
 
         // Get Response from API
-        $this->response = $url;
+        $this->response = $this->dummyData();
+    }
+
+    /**
+     * Structure Dummy Data
+     *
+     * @return array
+     */
+    public function dummyData(): array
+    {
+        return [
+            'hotelName' =>  "Top Hotel Name",
+            'rate'      =>  4,
+            'price'      =>  200.3,
+            'discount'      =>  0,
+            'amenities' =>  ["gym", "cafe"],
+        ];
     }
 
     /**
@@ -52,6 +68,7 @@ class TopHotelFactory implements AbstractProviderFactory
             'hotelName' =>  $this->response['hotelName'],
             'rate'      =>  $this->response['rate'],
             'fare'      =>  $this->response['price'],
+            'discount'      =>  $this->response['discount'],
             'amenities' =>  $this->response['amenities'],
         ];
 

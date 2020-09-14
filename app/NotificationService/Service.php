@@ -3,6 +3,6 @@ namespace App\NotificationService;
 
 interface Service
 {
-    public function send($data): void;
+    public function send($data): string;
 
 }

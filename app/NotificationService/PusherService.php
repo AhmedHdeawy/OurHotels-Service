@@ -18,8 +18,9 @@ class PusherService implements Service
 	 *
 	 * @return void
 	 */
-	public function send($data): void {
+	public function send($data): string {
 
         // Send Notification using Pusher with pusher configuration
+        return "Notification Sent";
 	}
 }

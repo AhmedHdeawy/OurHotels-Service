@@ -20,7 +20,7 @@ class Formatter
      */
     public function formatResponse(string $type)
     {
-        if ($this->type == 'json') {
+        if ($type == 'json') {
             $this->formatedData = $this->formatResponseToJson();
         }
 

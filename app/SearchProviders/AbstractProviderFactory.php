@@ -19,6 +19,14 @@ interface AbstractProviderFactory
     public function callProviderApi();
 
     /**
+     * Structure Dummy Data
+     *
+     * @return array
+     */
+    public function dummyData() : array;
+
+
+    /**
      * Get Response after Format
      *
      * @return mixed $jsonData

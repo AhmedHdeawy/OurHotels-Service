@@ -46,7 +46,6 @@ class SearchProvider
         // Call Provider API
         $this->factory->callProviderApi();
 
-
         // Return Response
         return $this->factory->getResponse();
     }
